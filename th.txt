@@ -1,0 +1,44 @@
+SPRING MVC :-
+
+model view and controller -->
+
+model -->beans -->dao ,DTO MAPPER
+
+view are JSP
+
+controller --> servlet controller
+
+DISPATCHER SERVLET -->will handle all request class/interface.
+
+MAVEN PROJECT
+
+
+			INTERNAL VIEW RESOLVER CLASS -> jsp urls what is location of your JSP --> tech.view .jsp
+
+
+
+MAVEN PROJECT WITH ARCHETYPE WEB
+ADD DEPEENDECIES
+
+1)CREATE SPRING-SERVLET.XML -->
+	make entry of view resolver in bean
+2)make entry of Dispatcher Servlet inside web.xml file....
+
+2)create MVC folder structure..
+
+	3)INSIDE WEB-INNF create folder which you have given as suffix eg suffix ="/WEB-INF/VIEW/"	
+
+3)create class inside controller, provide annotation @controller -->
+
+	create methods for business logics and render views(.jsp)
+
+	eg 
+	public String homr(){
+	
+	return "home"
+	}
+
+above method will try to find home.jsp inside WEB-INF/view folder.
+
+NOTE:
+all jsp must be created inside WEB-INF or sub folder of WEB-INF WEB-INF/VIEW, folder only in spring MVC
